@@ -1,96 +1,154 @@
-# Atividade Atividade Avaliativa II - Prática
+# Atividade Avaliativa III - Prática
 
-- Curso - Desenvolvimento de Sistemas
-- Unidade Curricular - Lógica de Programação
-- Docente - Gustavo Roberto de Souza
+* Curso - Desenvolvimento de Sistemas
+* Unidade Curricular - Lógica de Programação
+* Docente - Gustavo Roberto de Souza
 
 ## Orientações Gerais
 
-- A avaliação deverá ser realizada individualmente.
-- Não é permitido o uso do celular durante a realização da atividade.
-- Não é permitido o uso de nenhum tipo de auxílio de IA (Inteligencia Artificial);
-- Conceitos de entrada e saída de dados, variáveis, operadores e estruturas condicionais.
-- A entrega deverá ser feita no AVA, enviando apenas o link do repositório do github.
+* A avaliação deverá ser realizada individualmente.
+* Não é permitido o uso do celular durante a realização da atividade.
+* Não é permitido o uso de nenhum tipo de auxílio de IA (Inteligência Artificial).
+* Conceitos de entrada e saída de dados, variáveis, operadores, estruturas condicionais e estruturas de repetição.
+* Não deverá ser utilizado vetor, array, lista, matriz ou objeto para armazenar os dados.
+* A entrega deverá ser feita no AVA, enviando apenas o link do repositório do GitHub.
 
 ## Passo-a-Passo (Clonar e Entrega)
 
-1. Você deve fazer um fork desse repositório, na parte superior dessa página clique na botão de fork.
-2. Depois disso, você deve clonar o repositório para o seu computador, usando o seguinte comando.
+1. Você deve fazer um fork deste repositório. Na parte superior da página, clique no botão de **Fork**.
+2. Depois disso, você deve clonar o repositório para o seu computador utilizando o seguinte comando:
+
    1. Selecione uma pasta no computador.
    2. Abra o CMD (Terminal).
-   3. Execute o seguinte comando `git clone <url_do_repositório>`
-3. Abra no seu VS Code a pasta do projeto.
+   3. Execute o comando `git clone <url_do_repositório>`.
+3. Abra no VS Code a pasta do projeto.
 4. Desenvolva os exercícios.
-5. Ao finalizar você precisa comittar e enviar novamente para o github suas modificações.
-   1. Primeiro precisamos adicionar as alterações ao stage, usando o comando `git add .`.
-   2. Depois disso, você vai de fato commitar, usando o comando `git commit -m "sua mensagem"`.
-   3. Por fim, você precisa fazer push para o github, com o comando `git push origin master`.
-6. Por fim, você deve copiar o link do seu repositório e fazer o envio no AVA.
-   1. Você deve adicionar como comentário na entrega do AVA.
+5. Ao finalizar, você deverá commitar e enviar novamente para o GitHub suas modificações.
+
+   1. Adicione as alterações ao stage utilizando o comando `git add .`.
+   2. Faça o commit utilizando o comando `git commit -m "sua mensagem"`.
+   3. Envie as alterações utilizando o comando `git push origin master`.
+6. Por fim, copie o link do seu repositório e faça o envio no AVA.
+
+   1. O link deverá ser adicionado como comentário na entrega da atividade.
 
 ## Questões
 
 ### Questão 01
 
-Escreva um algoritmo que recebe três números inteiros e após isso, mostre-os em ordem crescente (do menor para o maior).
-Por exemplo, caso os tres números sejam 5,7,2. O algoritmo deve apresentar 2,5,7.
+Uma empresa deseja analisar o desempenho de seus vendedores durante um determinado período.
+
+Desenvolva um algoritmo que solicite ao usuário a quantidade de vendedores que serão analisados.
+
+Para cada vendedor, o programa deverá solicitar o valor total de vendas realizadas.
+
+Ao final, o algoritmo deverá apresentar:
+
+* A quantidade de vendedores que venderam mais de R$ 5.000,00.
+* A quantidade de vendedores que venderam R$ 5.000,00 ou menos.
+* O valor total vendido por todos os vendedores.
+* A média de vendas dos vendedores.
 
 ---
 
 ### Questão 02
 
-Você foi contratado para desenvolver o sistema de notas do carnaval 2025. Você precisa receber 6 notas de 0 à 10. Dessas notas,
-devem ser desconsideradas duas notas, a maior e a menor. Ao final, o algoritmo deve apresentar a média com as outras 4 notas
-restantes.
+Você está desenvolvendo um sistema para controlar as tentativas de acesso a uma área restrita. A senha correta do sistema é `4321`.
+O algoritmo deverá solicitar uma senha ao usuário.
+
+Enquanto a senha digitada estiver incorreta, o programa deverá informar:
+
+`Senha incorreta! Tente novamente.`
+
+O usuário poderá realizar no máximo **3 tentativas**.
+
+Caso informe a senha correta, o programa deverá apresentar:
+
+`Acesso permitido.`
+
+Caso utilize todas as tentativas sem acertar a senha, deverá apresentar:
+
+`Acesso bloqueado.`
+
+Ao final, informe também quantas tentativas foram utilizadas.
 
 ---
 
 ### Questão 03
 
-Você precisa desenvolver um algoritmo para calcular a pontuação de um jogador em um jogo de futebol. Nesse momento será analisada
-apenas a quantidade de gols, passes certos e passes errados.
+Um posto de combustível deseja analisar os abastecimentos realizados durante um determinado período.
 
-- Cada Gol: 50 Pontos
-- Cada Passe Certo: 10 Pontos
-- Cada Passe Errado: -5 Pontos
+Desenvolva um algoritmo que inicialmente solicite ao usuário a quantidade de abastecimentos que serão registrados.
 
-Você deve solicitar essas informações ao usuário e após isso, o algoritmo deve calcular a pontuação do jogador e informar se o jogador
-foi bem ou mal na partida, levando como base a seguinte tabela.
+Para cada abastecimento, o programa deverá solicitar:
 
-- Pontuação < 50 - Péssima partida.
-- Pontuação de 50 até 100 - Partida ruim.
-- Pontuação de 100 até 150 - Fez o básico
-- Pontuação de 150 até 200 - Foi bem na partida
-- Pontuação acima de 200 - Jogou demais
+* Tipo de combustível:
+
+  * `1 - Gasolina`
+  * `2 - Etanol`
+  * `3 - Diesel`
+* Quantidade de litros abastecidos.
+
+Considere os seguintes valores por litro:
+
+* Gasolina - R$ 6,20
+* Etanol - R$ 4,30
+* Diesel - R$ 5,90
+
+Para cada abastecimento, o algoritmo deverá calcular e apresentar o valor a ser pago.
+
+Ao final, o programa deverá apresentar:
+
+* Quantidade de abastecimentos com gasolina.
+* Quantidade de abastecimentos com etanol.
+* Quantidade de abastecimentos com diesel.
+* Quantidade total de litros vendidos.
+* Valor total arrecadado pelo posto.
+* Qual combustível teve a maior quantidade de abastecimentos.
+
+Caso seja informado um tipo de combustível inválido, o abastecimento não deverá ser contabilizado e o usuário deverá informar os dados novamente.
 
 ---
 
 ### Questão 04
 
-Crie um algoritmo para um calcular o valor de uma hospedagem. Você deve solicitar ao usuário a quantidade de diárias e também a idade
-do hospede. Com essas informações você calcular o valor total da diária com base na tabela de preço abaixo. Além disso, você deve levar
-em consideração que caso a pessoa tenha mais de 60 anos, ela terá um desconto de 20%. Ao final o algoritmo deve informar o valor total
-da hospedagem.
+Você precisa desenvolver um sistema simples para controlar os pedidos realizados em uma lanchonete.
 
-- Menor ou igual a 5 dias - R$100,00 a diária
-- De 6 até 10 dias - R$90,00 a diária
-- A partir de 11 dias - R$80,00 a diária
+O programa deverá apresentar repetidamente o seguinte menu:
+
+`1 - Hambúrguer - R$ 20,00`
+`2 - Cachorro-quente - R$ 15,00`
+`3 - Refrigerante - R$ 7,00`
+`4 - Batata frita - R$ 12,00`
+`0 - Finalizar pedido`
+
+A cada escolha, o valor correspondente deverá ser adicionado ao total da compra.
+
+O menu deverá continuar sendo apresentado até que o usuário escolha a opção `0`.
+
+Ao finalizar, o algoritmo deverá apresentar:
+
+* Quantidade total de itens pedidos.
+* Valor total da compra.
+* Valor médio gasto por item.
+
+Caso seja informada uma opção diferente das disponíveis no menu, apresente uma mensagem informando que a opção é inválida e não contabilize nenhum item.
 
 ---
 
 ### Questão 05
 
-Você deve desenvolver um algoritmo para conversão de temperaturas. Você deve solicitar ao usuário a unidade de medida de origem, a
-temperatura, e a unidade de medida para qual deseja fazer a conversão. Nesse momento você deve levar em consideração apenas 3 unidades
-de medida Celsius, Kelvin e Fahrenheit. No final o algoritmo deve informar a temperatura na unidade de medida escolhida.
+Um jogador deseja analisar seu desempenho em várias partidas.
 
-Celsius para Fahrenheit = `F = (C * 1.8) + 32`
-Fahrenheit para Celsius = `C = (F - 32) * (5/9)`
+O algoritmo deverá solicitar quantas partidas serão analisadas.
 
-Celsius para Kelvin = `K = C + 273.15`
-Kelvin para Celsius = `C = K - 273.15`
+Para cada partida, informe a quantidade de gols marcados.
 
-Celsius para Kelvin = `K = (F - 32) * (5/9) + 273.15`
-Kelvin para Fahrenheit = `F = (K - 273.15) * 1.8 + 32`
+Considere que cada gol vale `50 pontos`.
 
----
+Ao final, o programa deverá apresentar:
+
+* A quantidade total de gols.
+* A pontuação total do jogador.
+* A média de gols por partida.
+* Quantas partidas o jogador marcou 2 gols ou mais.
